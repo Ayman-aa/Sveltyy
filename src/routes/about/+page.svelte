@@ -17,7 +17,7 @@
     </div>
     <div class="p-4">
         <p class="mt-10 mb-10 text-2xl text-slate-500 leading-8">I've used Vite for fast and efficient development, Svelte for a smooth and responsive user experience, and Tailwind CSS for consistent and visually pleasing styling. The website data is powered by the TMDb API, which allows us to fetch data about  the latest movie information and provide a wide variety of content for users to browse and search. This webiste made just to showcase, my abilities of building websites and to show eveyone how cool svelte actually is!!! Thanks for visiting and enjoy!</p>
-        <p class="mb-8 text-sm">You can download the project from <span class="underline text-indigo-500"><a href="http://bit.ly/3XEBwhv">here</a></span></p>
+        <p class="mb-8 text-sm">You can download the project from <span class="underline text-indigo-500"><a href="http://bit.ly/3DlvWsl">here</a></span></p>
     </div>
     <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-9">
         <div class="md:flex">
