@@ -21,9 +21,9 @@
             <p class="mt-2 text-lg font-medium text-slate-600 text-center">Send me a message, I find you</p>
           </div>
           <div class="flex max-w-md md:max-w-2xl p-4 gap-3">
-           <a href="https://bit.ly/3XXWUOh"> <img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={med} alt="technology icon"/></a>
-           <a href="https://bit.ly/3Yija5Z"><img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={lin} alt="technology icon"/></a> 
-            <a href="http://bit.ly/3Rbhbh7"><img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={git} alt="technology icon"/></a> 
+           <a href="https://bit.ly/3XXWUOh" target="_blank"> <img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={med} alt="technology icon"/></a>
+           <a href="https://www.linkedin.com/in/ayman-aamam/" target="_blank"><img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={lin} alt="technology icon"/></a> 
+            <a href="http://bit.ly/3Rbhbh7" target="_blank"><img class="h-full w-20 object-contain md:h-full md:w-20 p-3 rounded-full hover:bg-indigo-300 transition ease-in-out delay-150" src={git} alt="technology icon"/></a> 
         </div>
         </div>
 </section>

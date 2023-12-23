@@ -10,6 +10,25 @@ function toggleNav() {
     nav.style.display = "none";
   }
 }
+
+  // Function to handle screen size change
+  function handleResize() {
+    const nav = document.getElementById("navbar-default");
+    if (window.innerWidth >= 768) {
+      // Set display to block for larger screens
+      nav.style.display = "block";
+    } else {
+      // Set display based on toggle state for smaller screens
+      nav.style.display = isNavOpen ? "block" : "none";
+    }
+  }
+
+  // Add event listener for window resize
+  window.addEventListener("resize", handleResize);
+
+  // Initial setup on component mount
+  import { onMount } from 'svelte';
+  onMount(handleResize);
  </script>
 <nav class="bg-whitesmoke border-gray-200 px-2 sm:px-4 py-2.5 rounded-b-sm rounded-t-none">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -19,15 +38,15 @@ function toggleNav() {
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-whitesmoke md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-whitesmoke dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-whitesmoke md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-whitesmoke ">
           <li>
-            <a href="/" class="block py-2 pl-3 pr-4 gray-700 rounded md:bg-transparent hover:text-blue-700 md:p-0 dark:text-white">Home</a>
+            <a href="/" class="block hover:text-black-700 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent">Home</a>
           </li>
           <li>
-            <a href="/about" class="block hover:text-blue-700 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            <a href="/about" class="block hover:text-black-700 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent">About</a>
           </li>
           <li>
-            <a href="/contact" class="block hover:text-blue-700 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            <a href="/contact" class="block hover:text-black-700 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent">Contact</a>
           </li>
         </ul>
       </div>
