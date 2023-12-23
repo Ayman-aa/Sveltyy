@@ -1,5 +1,5 @@
 <script>
- let isNavOpen = false;
+let isNavOpen = false;
 
 function toggleNav() {
   isNavOpen = !isNavOpen;
@@ -10,26 +10,7 @@ function toggleNav() {
     nav.style.display = "none";
   }
 }
-
-  // Function to handle screen size change
-  function handleResize() {
-    const nav = document.getElementById("navbar-default");
-    if (window.innerWidth >= 768) {
-      // Set display to block for larger screens
-      nav.style.display = "block";
-    } else {
-      // Set display based on toggle state for smaller screens
-      nav.style.display = isNavOpen ? "block" : "none";
-    }
-  }
-
-  // Add event listener for window resize
-  window.addEventListener("resize", handleResize);
-
-  // Initial setup on component mount
-  import { onMount } from 'svelte';
-  onMount(handleResize);
- </script>
+</script>
 <nav class="bg-whitesmoke border-gray-200 px-2 sm:px-4 py-2.5 rounded-b-sm rounded-t-none">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="/" class="flex items-center text-2xl font-bold">MovieLib</a>
